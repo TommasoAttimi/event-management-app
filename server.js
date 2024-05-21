@@ -4,6 +4,8 @@ const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const eventRoutes = require("./routes/eventRoutes");
+const dotenv = require("dotenv");
+require("dotenv").config();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
